@@ -1,0 +1,110 @@
+.main{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 150px;
+    background-color: aquamarine;
+    /* transform: perspective(200px); */ /* ata sodo parent div a useeed */
+    
+}
+.main:hover {
+    /* transform: rotate(200deg); */
+    /* transform: rotateX(200deg); */
+    /* transform: rotateY(200deg); */
+
+    /* transform: scale(2); */
+    /* transform: scaleX(2); */
+    /* transform: scaleY(2); */
+
+    /* transform: skew(30deg); */
+    /* transform: skewX(30deg); */
+    /* transform: skewY(30deg); */
+
+    /* transform: translateX(50px); */
+    /* transform: translateY(50px); */
+    /* transform: translate(50px, 50px); */
+
+
+    /* transform: matrix(scaleX(2), skewY(30deg), skewX(30deg), scaleY(2), translateX(50px), translateY(50px)); */
+    
+    /* transform: matrix(2, 0.4, 1, 2, 0, 0);  */ /* deg or px use kora jabe ba  */
+
+    transition: transform 2s;
+}
+
+
+.main-2{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: tomato;
+    perspective: 500px;
+    /* ata sodo parent div a useeed */
+    perspective-origin: top right;
+    /* perspective-origin: 50% 40%; */
+    /* perspective use korle origin kaj korbe  */
+    position: relative;
+}
+.main-2-inner{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: greenyellow;
+    transform: rotateY(56deg);
+    position: absolute;
+}
+
+
+
+.main-3{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: tomato;
+    position: relative;
+}
+.main-3-inner{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: greenyellow;
+    position: absolute;
+    /* transform: perspective(500px) translateZ(-100px); */
+    
+    /* Translate Z mazkhan teke kaj kore  */
+    transition: transform 2s;
+}
+
+.main-3-inner:hover{
+    /* perspective use korte hobe */
+    transform: perspective(500px) translate3d(50px, 50px, 30px);
+    /* transform: perspective(500px) translateZ(30px); */
+    
+}
+
+
+
+.main-4{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: tomato;
+    position: relative;
+}
+.main-4-inner{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: greenyellow;
+    position: absolute;
+    transition: transform 2s;
+}
+
+.main-4-inner:hover{
+    /* scaleZ(2) er effect dekhar jonno rotatedX use korte hobe */
+    transform: perspective(500px) scaleZ(2) rotateX(60deg);
+}
+

@@ -1,0 +1,105 @@
+/* Animation 2 vabe use kora jai */
+
+@keyframes name {
+    Form{
+        
+    }
+    to{
+
+    }
+}
+
+@keyframes name {
+    0%{
+        
+    }
+    100%{
+        
+    }
+}
+
+/* 
+@keyframes
+animation-name
+animation-duration -- animation kotokhon colbe
+animation-delay -- animation kotokhon por start hobe
+animation-iteration-count -- koto bar gorbe 
+animation-direction -- animation kon dik teke choilbe 
+animation-timing-function --- smooth kaj korar jonno
+animation-fill-mode --(backword) animation 0% tke kaj soro kore dibe and (forword) 100% a giye stop hobe .
+animation
+*/
+
+
+.main {
+    width: 100px;
+    height: 100px;
+    margin: 200px auto 0 auto;
+    background-color: tomato;
+
+    /* 
+    animation-name: animaion_1;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+
+    */
+    animation: animaion_1 2s 1s infinite;
+    
+}
+
+
+@keyframes animaion_1 {
+    Form{
+        width: 100px;
+    }
+    to{
+        width: 200px;
+    }
+}
+
+
+
+
+
+
+.main2 {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border: 20px solid tomato;
+    border-radius: 100px;
+    border-top: 20px solid green;
+
+    /* 
+    animation-name: animaion_2;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    */
+    /* animation: animaion_2 2s 1s infinite; */
+
+
+
+    /*  
+    animation-direction: alternate;
+    animation-duration: normal;
+    animation-timing-function: linear;
+    animation-timing-function: steps(3);
+    */
+    animation: animaion_2 2s 1s infinite normal linear;
+
+
+    animation-fill-mode: forwards;
+
+}
+
+
+@keyframes animaion_2 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
